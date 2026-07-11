@@ -1,0 +1,23 @@
+name: TPAExtension
+version: '${project.version}'
+main: com.example.tpaextension.TPAExtension
+api-version: '26.2'
+depend: [Essentials]
+softdepend: [floodgate]
+author: yangzijian52
+description: Paper 26.2 TPA GUI for Java and Bedrock players
+
+commands:
+  btpa:
+    description: Open the TPA player selection GUI
+    usage: /<command>
+    aliases: [bedrocktp, btp, tpgui, tgui]
+    permission: tpaextension.btpa
+
+permissions:
+  tpaextension.use:
+    description: Allow using TPA extension features
+    default: true
+  tpaextension.btpa:
+    description: Allow opening the Java or Bedrock TPA GUI
+    default: true
