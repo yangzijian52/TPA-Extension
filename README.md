@@ -99,6 +99,7 @@ gui:
 
 以下文件用于手动创建和维护 SpigotMC 免费资源页面：
 
+- [TPA Extension - SpigotMC 正式资源页](https://www.spigotmc.org/resources/tpa-extension.137016/)
 - [`docs/SPIGOTMC-RESOURCE.md`](docs/SPIGOTMC-RESOURCE.md)：资源介绍页英文 BBCode。
 - [`docs/SPIGOTMC-RESOURCE-BBCODE.txt`](docs/SPIGOTMC-RESOURCE-BBCODE.txt)：完整使用文档英文 BBCode。
 - [`docs/SPIGOTMC_MANUAL_PUBLISHING.md`](docs/SPIGOTMC_MANUAL_PUBLISHING.md)：人工发布字段、警告和操作步骤。
