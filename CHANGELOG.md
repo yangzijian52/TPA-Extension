@@ -6,15 +6,13 @@ All notable changes to TPA Extension are documented in this file.
 
 ### Added
 
-- Added complete English SpigotMC resource-page and documentation BBCode.
-- Added a manual SpigotMC publishing checklist.
 - Added the MIT License.
 - Included the MIT License in the release jar at `META-INF/LICENSE`.
 - Added detailed Chinese comments and examples to the administrator-editable configuration.
 
 ### Changed
 
-- Updated the README with SpigotMC publishing-material links.
+- Added the official SpigotMC resource link to the README.
 - Corrected the Essentials message guide so it no longer claims unsupported ProtocolLib interception.
 - Prepared the existing 2.1.2 release for SpigotMC without changing plugin behavior or configuration keys.
 
