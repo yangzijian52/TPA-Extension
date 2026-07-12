@@ -95,6 +95,18 @@ gui:
 
 完整的颜色代码、槽位范围、材质规则和多动作示例均写在 [`config.yml`](src/main/resources/config.yml) 的中文注释中。
 
+## SpigotMC 发布资料
+
+以下文件用于手动创建和维护 SpigotMC 免费资源页面：
+
+- [`docs/SPIGOTMC-RESOURCE.md`](docs/SPIGOTMC-RESOURCE.md)：资源介绍页英文 BBCode。
+- [`docs/SPIGOTMC-RESOURCE-BBCODE.txt`](docs/SPIGOTMC-RESOURCE-BBCODE.txt)：完整使用文档英文 BBCode。
+- [`docs/SPIGOTMC_MANUAL_PUBLISHING.md`](docs/SPIGOTMC_MANUAL_PUBLISHING.md)：人工发布字段、警告和操作步骤。
+- [`CHANGELOG.md`](CHANGELOG.md)：版本变更记录。
+- [`LICENSE`](LICENSE)：MIT License 全文。
+
+本项目建议在 SpigotMC 作为 **免费资源（US$0.00）** 发布。理由是项目采用 MIT License、源码与构建产物公开，并且不包含付费服务、授权验证或独占高级功能。SpigotMC 页面、文档与支持渠道仅使用英文，不在 SpigotMC 提供中文支持。
+
 ## 构建
 
 需要 Java 21 或更高版本以及 Maven 3.9+：
