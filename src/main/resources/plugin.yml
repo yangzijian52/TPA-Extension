@@ -1,11 +1,11 @@
 name: TPAExtension
 version: '${project.version}'
 main: com.example.tpaextension.TPAExtension
-api-version: '26.2'
+api-version: '26.3'
 depend: [Essentials]
 softdepend: [floodgate]
 author: yangzijian52
-description: Paper 26.2 TPA GUI for Java and Bedrock players
+description: Paper 26.3 TPA GUI for Java and Bedrock players
 
 commands:
   btpa:

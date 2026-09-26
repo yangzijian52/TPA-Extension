@@ -1,12 +1,12 @@
 # TPA Extension
 
-适用于 Paper 26.2 的 Essentials TPA 界面扩展，为 Java 版与基岩版（PE）玩家提供统一的玩家选择、请求发送、接受、拒绝和取消体验。
+适用于 Paper 26.3 的 Essentials TPA 界面扩展，为 Java 版与基岩版（PE）玩家提供统一的玩家选择、请求发送、接受、拒绝和取消体验。
 
-当前版本：`2.1.2`
+当前版本：`2.1.3`
 
 SpigotMC：[TPA Extension](https://www.spigotmc.org/resources/tpa-extension.137016/)
 
-> 已在 Paper 26.2 真实服务器完成 Java/PE 联机实测，包含请求发送、接受、拒绝、取消、请求超时以及 PE 取消表单自动关闭。
+> 历史上已在 Paper 26.2 真实服务器完成 Java/PE 联机实测，包含请求发送、接受、拒绝、取消、请求超时以及 PE 取消表单自动关闭。当前 26.3 候选版已完成测试服加载、重启和四服并联回归，Java/PE 玩法仍需真人验收。
 
 ## 功能
 
@@ -28,7 +28,7 @@ SpigotMC：[TPA Extension](https://www.spigotmc.org/resources/tpa-extension.1370
 
 | 项目 | 状态 |
 | --- | --- |
-| Paper 26.2 | 通过 |
+| Paper 26.3 | 通过 |
 | Java 玩家打开 GUI 并发送请求 | 通过 |
 | Java 接受、拒绝、取消按钮 | 通过 |
 | PE 玩家列表与搜索表单 | 通过 |
@@ -36,11 +36,11 @@ SpigotMC：[TPA Extension](https://www.spigotmc.org/resources/tpa-extension.1370
 | 对方处理请求后自动关闭 PE 取消表单 | 通过 |
 | 配置文件底栏 `[command]` / `[close]` | 通过 |
 
-实测结论由服主在 Paper 26.2 服务器中完成验证。插件使用 Java 21 字节码构建；服务器运行时 Java 版本请遵循 Paper 26.2 的要求。
+实测结论由服主在 Paper 26.2 服务器中完成历史验证；当前 26.3 候选版已完成测试服启动、重启和并联回归。插件使用 Java 21 字节码构建；服务器运行时 Java 版本请遵循 Paper 26.3 的要求。
 
 ## 依赖
 
-- [Paper](https://papermc.io/) 26.2
+- [Paper](https://papermc.io/) 26.3
 - Essentials（必需，插件名为 `Essentials`）
 - Floodgate（可选；需要支持基岩版原生表单时安装）
 
@@ -108,7 +108,7 @@ mvn clean package
 构建产物位于：
 
 ```text
-target/tpa-extension-2.1.2.jar
+target/tpa-extension-2.1.3.jar
 ```
 
 ## 项目结构
@@ -147,7 +147,7 @@ src/main/resources/
 
 ### 2.0.0～2.0.2
 
-- 升级至 Paper 26.2。
+- 升级至 Paper 26.3。
 - 增加 Java 玩家 GUI、分页、搜索与统一底栏布局。
 - 修复重复通知、并发覆盖、离线残留、手动响应后状态未清理及 `/tpahere` 方向错误。
 
