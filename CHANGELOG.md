@@ -2,6 +2,18 @@
 
 All notable changes to TPA Extension are documented in this file.
 
+## [2.1.4] - 2026-10-11
+
+- Isolated Floodgate and Cumulus classes from the plugin entry point, Java command and shared UI service.
+- Keep Java inventory menus and chat controls available when Floodgate is missing, disabled or fails to initialize.
+- Added a standalone class-loading regression probe that blocks all Geyser/Floodgate/Cumulus packages.
+- Servers using Gate without Floodgate use the inventory/chat path; Gate native-form integration is not implemented.
+- Maintainer confirmed the fix passed live-server testing before release.
+
+## [2.1.3]
+
+- Updated the Paper API and plugin API declaration to Paper 26.3.
+
 ## [2.1.2] - 2026-07-12
 
 ### Added

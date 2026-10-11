@@ -2,11 +2,11 @@
 
 适用于 Paper 26.3 的 Essentials TPA 界面扩展，为 Java 版与基岩版（PE）玩家提供统一的玩家选择、请求发送、接受、拒绝和取消体验。
 
-当前版本：`2.1.3`
+当前版本：`2.1.4`
 
 SpigotMC：[TPA Extension](https://www.spigotmc.org/resources/tpa-extension.137016/)
 
-> 历史上已在 Paper 26.2 真实服务器完成 Java/PE 联机实测，包含请求发送、接受、拒绝、取消、请求超时以及 PE 取消表单自动关闭。当前 26.3 候选版已完成测试服加载、重启和四服并联回归，Java/PE 玩法仍需真人验收。
+> 2.1.4 的可选 Floodgate 启动修复已由服主实服测试通过。历史上已在 Paper 26.2 完成 Java/PE 联机实测；当前版本面向 Paper 26.3。
 
 ## 功能
 
@@ -29,7 +29,7 @@ SpigotMC：[TPA Extension](https://www.spigotmc.org/resources/tpa-extension.1370
 | 项目 | 状态 |
 | --- | --- |
 | Paper 26.3 构建、启动、重启和并联回归 | 通过 |
-| Paper 26.3 Java/PE 真人玩法 | 待验收 |
+| 2.1.4 可选 Floodgate 启动修复 | 服主实服测试通过 |
 | Paper 26.2 Java 玩家打开 GUI 并发送请求 | 历史实测通过 |
 | Paper 26.2 Java 接受、拒绝、取消按钮 | 历史实测通过 |
 | Paper 26.2 PE 玩家列表与搜索表单 | 历史实测通过 |
@@ -37,7 +37,7 @@ SpigotMC：[TPA Extension](https://www.spigotmc.org/resources/tpa-extension.1370
 | Paper 26.2 对方处理请求后自动关闭 PE 取消表单 | 历史实测通过 |
 | Paper 26.2 配置文件底栏 `[command]` / `[close]` | 历史实测通过 |
 
-实测结论由服主在 Paper 26.2 服务器中完成历史验证；当前 26.3 候选版已完成测试服启动、重启和并联回归。插件使用 Java 21 字节码构建；服务器运行时 Java 版本请遵循 Paper 26.3 的要求。
+历史 Java/PE 结论来自 Paper 26.2 实测；当前 Paper 26.3 代码已完成测试服启动、重启和并联回归，2.1.4 启动修复已由服主完成实服验收。插件使用 Java 21 字节码构建；服务器运行时 Java 版本请遵循 Paper 26.3 的要求。
 
 ## 依赖
 
@@ -109,7 +109,7 @@ mvn clean package
 构建产物位于：
 
 ```text
-target/tpa-extension-2.1.3.jar
+target/tpa-extension-2.1.4.jar
 ```
 
 ## 项目结构
@@ -129,6 +129,13 @@ src/main/resources/
 ```
 
 ## 版本记录
+
+### 2.1.4
+
+- 隔离 Floodgate/Cumulus 可选依赖，修复未安装 Floodgate 时 Java 功能也无法启动的问题。
+- Floodgate 未启用或适配器初始化失败时使用 Java 箱子 GUI 和聊天按钮。
+- Gate 环境可使用箱子 GUI/聊天路径，原生表单仍需 Floodgate。
+- 增加屏蔽所有 Geyser 类的类加载回归检查，修复已实服测试通过。
 
 ### 2.1.2
 
